@@ -14,20 +14,23 @@
 
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route,Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/login'; // Import your Login component
-import Signup from './pages/Register'; // Import your Signup component
+import Register from './pages/Register';
 
 function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/login" component={Login} />
-        <Route path="/Register" component={Signup} />
-      </Switch>
-    </Router>
+  return ( 
+
+  <BrowserRouter>
+    <Routes>
+    
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
+    </Routes>
+    </BrowserRouter>
+    
   );
 }
 
