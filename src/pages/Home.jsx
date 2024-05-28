@@ -29,9 +29,7 @@ function Home() {
           <div className='home-main-body'>
             <h1>Vango Palaguvom</h1>
             <p>Sign Up to See Your Chats and Calls <span> From Your Friends</span></p>
-            <form action ="Login">
-           <button type=" submit" id="home-login">Login</button><br />
-           </form>
+           <button  id="home-login"><a href=" Login.jsx">Login</a></button><br />
             <button id="home-signup"><a href = "Register.jsx" >Signup</a></button>
           </div>
         </div>

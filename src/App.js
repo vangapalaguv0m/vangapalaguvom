@@ -21,15 +21,15 @@ import Register from './pages/Register';
 
 function App() {
   return ( 
-
-  <BrowserRouter>
-    <Routes>
+    <Register/>
+  // <BrowserRouter>
+  //   <Routes>
     
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
-    </Routes>
-    </BrowserRouter>
+  //       <Route path="/" element={<Home />} />
+  //       <Route path="/login" element={<Login />} />
+  //       <Route path="/Register" element={<Register />} />
+  //   </Routes>
+  //   </BrowserRouter>
     
   );
 }
