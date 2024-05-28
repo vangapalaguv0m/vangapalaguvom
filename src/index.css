@@ -75,5 +75,11 @@ body {
   font-size: 25px;
 }
 #home-signup{
-  padding: 10px 145px;
+  padding: 10px 100px;
+  border-radius: 20px;
+  margin-top: 30px;
+  background-color: blue;
+  color: white;
+  text-transform:uppercase;
+  font-size: 25px;
 }
