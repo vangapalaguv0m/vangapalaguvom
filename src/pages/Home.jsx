@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import "../index.css";
 import logo from "./Images/Logo.png";
 
@@ -29,8 +30,9 @@ function Home() {
           <div className='home-main-body'>
             <h1>Vango Palaguvom</h1>
             <p>Sign Up to See Your Chats and Calls <span> From Your Friends</span></p>
-           <button  id="home-login"><a href=" Login.jsx">Login</a></button><br />
-            <button id="home-signup"><a href = "Register.jsx" >Signup</a></button>
+            {/* Use Link instead of <a> tag */}
+            <Link to="/Login" id="home-login">Login</Link><br />
+            <Link to="/Register" id="home-signup">Register</Link><br />
           </div>
         </div>
       )}

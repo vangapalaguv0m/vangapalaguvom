@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Register() {
   return (
@@ -8,8 +9,8 @@ function Register() {
               <h1>Register</h1>
                 <input type="text" id="user" placeholder='User Name'></input>
                 <input type="password" id="pass" placeholder='Password'></input><br></br>
-    <button type='submit' id='login-btn'>Login</button>
-    <p id="login-register-btn">Already Have an Account <a href="login.jsx">Login</a></p>
+    <button type='submit' id='login-btn'>Register</button>
+    <p id="login-register-btn">Already Have an Account <Link to ="/Login">Login</Link></p>
                 
             </form>
         </div>
