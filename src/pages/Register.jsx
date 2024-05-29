@@ -13,6 +13,13 @@ function Register() {
     <p id="login-register-btn">Already Have an Account <Link to ="/Login">Login</Link></p>
                 
             </form>
+            <h2>Or</h2>
+          <div className='register-verification'>
+            <button id="login-verification-button">Login With Google</button><br/>
+            <button id="login-verification-button">Login With Face Book</button><br/>
+            <button id="login-verification-button">Login With Instagram</button><br/>
+            <button id="login-verification-button">Login With Git Hub</button><br/>
+    </div>
         </div>
     </div>
   )
