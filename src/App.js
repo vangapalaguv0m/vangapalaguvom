@@ -7,16 +7,15 @@ import Interface from "./pages/Interface"
 
 function App() {
   return ( 
-    <Interface />
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/Login" element={<Login />} />
-    //     <Route path="/register" element={<Register />} />
-    //     <Route path="/Interface" element={<Interface />} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/Interface" element={<Interface />} />
         
-    //   </Routes>
-    // </BrowserRouter>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

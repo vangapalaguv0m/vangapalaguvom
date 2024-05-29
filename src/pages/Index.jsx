@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './Images/Logo.png';
 import "../index.css";
+<script src="main.js" defer type='module'></script>
 
 function Index() {
   return (
