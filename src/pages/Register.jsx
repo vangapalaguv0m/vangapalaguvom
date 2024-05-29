@@ -1,5 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FcGoogle } from 'react-icons/fc';
+import { BiLogoFacebookSquare } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
+import { FaMobile } from "react-icons/fa";
+
+
 
 function Register() {
   return (
@@ -14,12 +20,10 @@ function Register() {
                 
             </form>
             <h2>Or</h2>
-          <div className='register-verification'>
-            <button id="login-verification-button">Login With Google</button><br/>
-            <button id="login-verification-button">Login With Face Book</button><br/>
-            <button id="login-verification-button">Login With Instagram</button><br/>
-            <button id="login-verification-button">Login With Git Hub</button><br/>
-    </div>
+            <button id="login-verification-button">Login With Mobile  <FaMobile /></button><br/>
+            <button id="login-verification-button">Login With Google <FcGoogle /></button><br/>
+            <button id="login-verification-button">Login With Face Book < BiLogoFacebookSquare/></button><br/>
+            <button id="login-verification-button">Login With Git Hub < FaGithub/></button><br/>
         </div>
     </div>
   )
