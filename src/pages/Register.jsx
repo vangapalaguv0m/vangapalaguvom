@@ -1,12 +1,12 @@
-<<<<<<< Updated upstream
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 import { BiLogoFacebookSquare } from 'react-icons/bi';
 import { FaGithub } from 'react-icons/fa';
 import { FaMobile } from 'react-icons/fa';
 import { app, auth, googleAuthProvider } from '../main.js'; // Adjusted import path
-import { signInWithPopup } from "firebase/auth"; // Import signInWithPopup from Firebase Authentication SDK
+import React, { useEffect } from 'react';
+import { initializeApp } from 'firebase/app';
+import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 
 
 function Register() {
@@ -21,11 +21,7 @@ function Register() {
       // Handle error
     }
   };
-=======
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { initializeApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -73,25 +69,21 @@ function Register() {
       }
     };
   }, []);
->>>>>>> Stashed changes
 
   return (
     <div className='signup-full-body'>
       <div className='signup-main-body'>
         <form action="Register" method='post'>
           <h1>Register</h1>
-<<<<<<< Updated upstream
           <input type="text" id="user" placeholder='User Name'></input>
           <input type="password" id="pass" placeholder='Password'></input><br></br>
           <button type='submit' id='login-btn'>Register</button>
           <p id="login-register-btn">Already Have an Account <Link to="/Login">Login</Link></p>
-        </form>
         <h2>Or</h2>
         <button id="login-verification-Mobile">Login With Mobile  <FaMobile /></button><br/>
         <button id="login-verification-Google" onClick={handleGoogleLogin}>Login With Google <FcGoogle /></button><br/>
         <button id="login-verification-button">Login With Face Book < BiLogoFacebookSquare/></button><br/>
         <button id="login-verification-button">Login With Git Hub < FaGithub/></button><br/>
-=======
           <input type="text" id="user" placeholder='User Name' />
           <input type="password" id="pass" placeholder='Password' /><br />
           <button type='submit' id='login-btn'>Login</button>
@@ -102,10 +94,9 @@ function Register() {
         <div className="google-login" id="login-sign-in">
           <h3>Sign in with Google</h3>
         </div>
->>>>>>> Stashed changes
       </div>
     </div>
   );
-}
+}}
 
 export default Register;
