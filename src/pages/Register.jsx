@@ -1,12 +1,14 @@
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link ,useEffect} from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 import { BiLogoFacebookSquare } from 'react-icons/bi';
 import { FaGithub } from 'react-icons/fa';
 import { FaMobile } from 'react-icons/fa';
 import { app, auth, googleAuthProvider } from '../main.js'; // Adjusted import path
-import React, { useEffect } from 'react';
-import { initializeApp } from 'firebase/app';
+import { initializeApp,firebase } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import 'firebase/auth';
+
 
 
 function Register() {
