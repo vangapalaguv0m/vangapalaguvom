@@ -26,4 +26,8 @@ function Login() {
   );
 }
 
+<<<<<<< Updated upstream
 export default Login;
+=======
+export default Login
+>>>>>>> Stashed changes
