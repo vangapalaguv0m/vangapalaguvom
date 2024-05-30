@@ -12,7 +12,10 @@ import { FaBars,FaSearch } from "react-icons/fa";
 
         </div>
         <div className='interface-main-body'>
-<h1></h1>
+          <img src="https://th.bing.com/th?id=OIP.IGNf7GuQaCqz_RPq5wCkPgAAAA&w=204&h=306&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="user" />
+          <h2>Maari</h2>
+          <p>8:00pm</p>
+            
     </div>
     </div>
 
