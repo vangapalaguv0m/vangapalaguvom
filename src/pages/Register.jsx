@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-import React from 'react'
-import { Link ,useEffect} from 'react-router-dom';
-=======
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
->>>>>>> Stashed changes
 import { FcGoogle } from 'react-icons/fc';
 import { BiLogoFacebookSquare } from 'react-icons/bi';
 import { FaGithub } from 'react-icons/fa';
@@ -28,14 +23,7 @@ function Register() {
       // Handle error
     }
   };
-<<<<<<< Updated upstream
 
-=======
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { initializeApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
->>>>>>> Stashed changes
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -89,10 +77,6 @@ function Register() {
       <div className='signup-main-body'>
         <form action="Register" method='post'>
           <h1>Register</h1>
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
           <input type="text" id="user" placeholder='User Name'></input>
           <input type="password" id="pass" placeholder='Password'></input><br></br>
           <button type='submit' id='login-btn'>Register</button>
@@ -102,10 +86,7 @@ function Register() {
         <button id="login-verification-Google" onClick={handleGoogleLogin}>Login With Google <FcGoogle /></button><br/>
         <button id="login-verification-button">Login With Face Book < BiLogoFacebookSquare/></button><br/>
         <button id="login-verification-button">Login With Git Hub < FaGithub/></button><br/>
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
           <input type="text" id="user" placeholder='User Name' />
           <input type="password" id="pass" placeholder='Password' /><br />
           <button type='submit' id='login-btn'>Login</button>
@@ -116,10 +97,7 @@ function Register() {
         <div className="google-login" id="login-sign-in">
           <h3>Sign in with Google</h3>
         </div>
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
       </div>
     </div>
   );
